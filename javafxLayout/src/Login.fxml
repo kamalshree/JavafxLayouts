@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="56.0" prefWidth="254.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegsiterController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="266.0" prefWidth="254.0">
+         <children>
+            <Hyperlink fx:id="Regsiter" alignment="CENTER" contentDisplay="CENTER" onAction="#Register" text="Register" textAlignment="CENTER" textFill="#db540a">
+               <VBox.margin>
+                  <Insets left="150.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="201.0" text="Welcome" textAlignment="CENTER" textFill="#db540a">
+               <padding>
+                  <Insets bottom="20.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Email" textAlignment="CENTER" textFill="#db540a">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField promptText="Email Address">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="66.0" prefHeight="100.0" prefWidth="223.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Password" textFill="#db540a">
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="217.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #db540a;" text="Sign in" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Hyperlink fx:id="forgotpassword" alignment="CENTER" contentDisplay="CENTER" onAction="#forgotpassword" text="Forgot your password?">
+                           <VBox.margin>
+                              <Insets left="65.0" top="5.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -38,7 +38,7 @@
    <bottom>
       <AnchorPane prefHeight="39.0" prefWidth="625.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="11.0" prefHeight="17.0" prefWidth="215.0" text="Copyright @2017" textFill="WHITE" wrapText="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="11.0" prefHeight="17.0" prefWidth="215.0" text="Copyright2017" textFill="WHITE" wrapText="true" />
          </children>
       </AnchorPane>
    </bottom>
