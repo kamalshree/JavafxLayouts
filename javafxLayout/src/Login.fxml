@@ -38,7 +38,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField promptText="Email Address">
+                  <TextField fx:id="txtemail" promptText="Email Address">
                      <HBox.margin>
                         <Insets left="5.0" />
                      </HBox.margin>
@@ -55,14 +55,14 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <PasswordField />
+                  <PasswordField fx:id="txtpassword" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <VBox prefHeight="70.0" prefWidth="217.0">
                      <children>
-                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #db540a;" text="Sign in" textAlignment="CENTER">
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#LoginCheck" prefWidth="150.0" style="-fx-background-color: #db540a;" text="Sign in" textAlignment="CENTER">
                            <VBox.margin>
                               <Insets left="60.0" />
                            </VBox.margin>
