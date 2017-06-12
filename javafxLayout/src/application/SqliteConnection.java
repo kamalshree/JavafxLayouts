@@ -8,8 +8,8 @@ public class SqliteConnection {
 	public static Connection ConnectionArea() {
 		Connection conn = null;
 		try {
-			Class.forName("org.sqlite.JDBC");
-			conn = DriverManager.getConnection("jdbc:sqlite:CourseDB.sqlite");
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb","root","root27031984");
 
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

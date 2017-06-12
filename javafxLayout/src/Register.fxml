@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="396.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="396.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegsiterController">
    <children>
       <VBox layoutX="-2.0" prefHeight="476.0" prefWidth="416.0">
          <children>
@@ -33,7 +33,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="25.0" prefWidth="150.0">
+                  <TextField fx:id="txtname" prefHeight="25.0" prefWidth="150.0">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -52,7 +52,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="25.0" prefWidth="192.0" promptText="example@one.com">
+                  <TextField fx:id="txtemailaddress" prefHeight="25.0" prefWidth="192.0" promptText="example@one.com">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -71,7 +71,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <PasswordField prefHeight="25.0" prefWidth="160.0">
+                  <PasswordField fx:id="txtpass" prefHeight="25.0" prefWidth="160.0">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -90,7 +90,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="25.0" prefWidth="169.0" promptText="mm-dd-YYYY">
+                  <TextField fx:id="txtdob" prefHeight="25.0" prefWidth="169.0" promptText="mm-dd-YYYY">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -109,7 +109,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <ComboBox prefHeight="25.0" prefWidth="150.0" promptText="Select City">
+                  <ComboBox fx:id="txtcity" prefHeight="25.0" prefWidth="150.0" promptText="Select City">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -120,7 +120,7 @@
                </VBox.margin></HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" style="-fx-background-color: #db540a;" text="Submit" textAlignment="CENTER" textFill="#0d0d0d">
+                  <Button mnemonicParsing="false" onAction="#Registrationcheck" style="-fx-background-color: #db540a;" text="Submit" textAlignment="CENTER" textFill="#0d0d0d">
                      <HBox.margin>
                         <Insets left="120.0" />
                      </HBox.margin>
